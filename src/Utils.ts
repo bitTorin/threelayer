@@ -1,3 +1,8 @@
+/**
+ * @author salgum1114 / https://github.com/salgum1114
+ * @author bitTorin / https://github.com/bitTorin
+ */
+
 import Constant from './Constant';
 import { Matrix4, Vector3, Object3D, PerspectiveCamera, Geometry } from 'three';
 
@@ -11,7 +16,6 @@ class Utils {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @param {number[]} uglymatrix
 	 */
 	prettyPrintMatrix(uglymatrix: number[]) {
@@ -28,7 +32,6 @@ class Utils {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @param {number} fovy
 	 * @param {number} aspect
 	 * @param {number} near
@@ -47,7 +50,6 @@ class Utils {
 	/**
 	 * gimme radians
 	 *
-	 * @author salgum1114
 	 * @param {(number | [number, number, number] | { x: number; y: number; z: number })} deg
 	 * @returns
 	 */
@@ -73,7 +75,6 @@ class Utils {
 	/**
 	 * gimme degrees
 	 *
-	 * @author salgum1114
 	 * @param {(number | { x: number; y: number; z: number })} rad
 	 * @returns
 	 */
@@ -92,7 +93,6 @@ class Utils {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @param {[number, number, number]} coords
 	 * @returns
 	 */
@@ -118,7 +118,6 @@ class Utils {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @param {number} latitude
 	 * @returns
 	 */
@@ -129,7 +128,6 @@ class Utils {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @param {[number, number, number]} centerLatLng
 	 * @param {Vector3[]} vertices
 	 * @returns
@@ -144,7 +142,6 @@ class Utils {
 	/**
 	 * @deprecated
 	 *
-	 * @author salgum1114
 	 * @param {[number, number, number]} coords
 	 */
 	projectToScreen(coords: [number, number, number]) {
@@ -154,7 +151,6 @@ class Utils {
 	/**
 	 * @deprecated
 	 *
-	 * @author salgum1114
 	 * @param {[number, number, number]} pixel
 	 */
 	unprojectFromScreen(pixel: [number, number, number]) {
@@ -164,7 +160,6 @@ class Utils {
 	/**
 	 * world units to lnglat
 	 *
-	 * @author salgum1114
 	 * @param {{ x: number; y: number; z: number }} worldUnits
 	 * @returns
 	 */
@@ -186,7 +181,6 @@ class Utils {
 	/**
 	 * @deprecated
 	 *
-	 * @author salgum1114
 	 * @param {Object3D} obj
 	 * @param {PerspectiveCamera} camera
 	 * @returns
@@ -214,7 +208,6 @@ class Utils {
 	/**
 	 * get the center point of a feature
 	 *
-	 * @author salgum1114
 	 * @param {GeoJSON.Feature<any>} feature
 	 * @param {ThreeboxObject} [obj]
 	 * @param {number} [level]
@@ -248,7 +241,6 @@ class Utils {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @param {GeoJSON.Feature<any>} feature
 	 * @param {ThreeboxObject} obj
 	 * @param {number} [level=feature.properties.level || 0]
@@ -272,7 +264,6 @@ class Utils {
 	/**
 	 * @deprecated
 	 *
-	 * @author salgum1114
 	 * @param {*} obj
 	 */
 	flipMaterialSides(obj: any) {
@@ -282,7 +273,6 @@ class Utils {
 	/**
 	 * to improve precision, normalize a series of vector3's to their collective center, and move the resultant mesh to that center
 	 *
-	 * @author salgum1114
 	 * @param {Vector3[]} vertices
 	 * @returns
 	 */
@@ -302,7 +292,6 @@ class Utils {
 	/**
 	 * flatten an array of Vector3's into a shallow array of values in x-y-z order, for bufferGeometry
 	 *
-	 * @author salgum1114
 	 * @param {Vector3[]} vectors
 	 * @returns
 	 */
@@ -325,7 +314,6 @@ class Utils {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @param {Record<string, any>} original
 	 * @param {Record<string, any>} addition
 	 */
@@ -336,7 +324,6 @@ class Utils {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @param {Record<string, any>} original
 	 * @returns
 	 */
@@ -349,7 +336,6 @@ class Utils {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @param {number} n
 	 * @param {number} min
 	 * @param {number} max
@@ -362,7 +348,6 @@ class Utils {
 	/**
 	 * retrieve object parameters from an options object
 	 *
-	 * @author salgum1114
 	 * @param {(number | { x: number; y: number; z: number })} rotation
 	 * @param {[number, number, number]} currentRotation
 	 * @returns
@@ -385,7 +370,6 @@ class Utils {
 	/**
 	 * retrieve object parameters from an options object
 	 *
-	 * @author salgum1114
 	 * @param {(number | { x: number; y: number; z: number })} scale
 	 * @param {[number, number, number]} currentScale
 	 * @returns
@@ -406,7 +390,6 @@ class Utils {
 	/**
 	 * retrieve object parameters from an options object
 	 *
-	 * @author salgum1114
 	 * @param {[number, number, number]} array
 	 * @param {[number, number, number]} current
 	 * @returns
@@ -421,7 +404,6 @@ class Utils {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @param {Record<string, any>} userInputs
 	 * @param {Record<string, any>} defaults
 	 * @returns

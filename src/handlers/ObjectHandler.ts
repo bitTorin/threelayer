@@ -1,3 +1,8 @@
+/**
+ * @author salgum1114 / https://github.com/salgum1114
+ * @author bitTorin / https://github.com/bitTorin
+ */
+
 import {
 	Color,
 	LineBasicMaterial,
@@ -137,7 +142,6 @@ class ObjectHandler {
 	/**
 	 * @deprecated
 	 *
-	 * @author salgum1114
 	 * @param {*} option
 	 */
 	extrusion(option: any) {
@@ -661,7 +665,6 @@ class ObjectHandler {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @param {(any | any[])} obj
 	 * @param {*} option
 	 * @returns
@@ -685,7 +688,6 @@ class ObjectHandler {
 	/**
 	 * add tooltip method
 	 *
-	 * @author salgum1114
 	 * @param {string} tooltipText
 	 * @param {boolean} [mapboxStyle=false]
 	 * @returns
@@ -721,7 +723,6 @@ class ObjectHandler {
 	/**
 	 * draw label method can be invoked separately
 	 *
-	 * @author salgum1114
 	 * @param {(HTMLElement | string)} element
 	 * @param {string} cssClass
 	 * @returns

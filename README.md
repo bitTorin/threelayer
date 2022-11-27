@@ -1,2 +1,2 @@
-# mapbox-gl-threelayer
-This plugin helps you use Three.js on Mapbox-GL.
+# threelayer
+Plugin to help you use Threebox on Mapbox-GL within a React App.

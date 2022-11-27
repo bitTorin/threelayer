@@ -1,3 +1,8 @@
+/**
+ * @author salgum1114 / https://github.com/salgum1114
+ * @author bitTorin / https://github.com/bitTorin
+ */
+
 import {
 	GammaEncoding,
 	Scene,
@@ -248,7 +253,6 @@ export interface ThreeboxObject extends Omit<Object3D, 'add' | 'remove'> {
 	hasEventListener(type: ThreeboxObjectEventType, listener: (event: Event) => void): boolean;
 	/**
 	 * Removes a listener from an event type.
-	 * @author salgum1114
 	 * @param {ThreeboxObjectEventType} type The type of the listener that gets removed.
 	 * @param {(event: Event) => void} listener The listener function that gets removed.
 	 */
@@ -316,7 +320,6 @@ class Threebox extends EventDispatcher {
 
 	/**
 	 * Creates an instance of Threebox.
-	 * @author salgum1114
 	 * @param {mapboxgl.Map} map
 	 * @param {WebGLRenderingContext} gl
 	 * @param {ThreeboxOption} [option]
@@ -385,7 +388,6 @@ class Threebox extends EventDispatcher {
 	/**
 	 * Set up event option
 	 *
-	 * @author salgum1114
 	 * @param {ThreeboxOption} option
 	 */
 	public setOption(option: ThreeboxOption) {
@@ -402,7 +404,6 @@ class Threebox extends EventDispatcher {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 */
 	public defaultLights() {
 		if (this.useDefaultLights) {
@@ -422,7 +423,6 @@ class Threebox extends EventDispatcher {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @returns
 	 */
 	public memory() {
@@ -432,7 +432,6 @@ class Threebox extends EventDispatcher {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @returns
 	 */
 	public programs() {
@@ -442,7 +441,6 @@ class Threebox extends EventDispatcher {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @param {[number, number, number]} coords
 	 * @returns
 	 */
@@ -453,7 +451,6 @@ class Threebox extends EventDispatcher {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @param {{ x: number; y: number; z: number }} v3
 	 * @returns
 	 */
@@ -464,7 +461,6 @@ class Threebox extends EventDispatcher {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @param {number} lat
 	 * @returns
 	 */
@@ -475,7 +471,6 @@ class Threebox extends EventDispatcher {
 	/**
 	 * get the center point of a feature
 	 *
-	 * @author salgum1114
 	 * @param {GeoJSON.Feature<any>} feature
 	 * @param {ThreeboxObject} obj
 	 * @param {number} level
@@ -488,7 +483,6 @@ class Threebox extends EventDispatcher {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @param {GeoJSON.Feature<any>} feature
 	 * @param {ThreeboxObject} [obj]
 	 * @param {number} [level]
@@ -501,7 +495,6 @@ class Threebox extends EventDispatcher {
 	/**
 	 *
 	 *
-	 * @author salgum1114
 	 * @param {mapboxgl.Point} point
 	 * @returns
 	 */
@@ -524,7 +517,6 @@ class Threebox extends EventDispatcher {
 	/**
 	 * find 3D object of a mesh. this method is needed to know the object of a raycasted mesh
 	 *
-	 * @author salgum1114
 	 * @param {Intersection} mesh
 	 * @returns
 	 */
@@ -544,7 +536,6 @@ class Threebox extends EventDispatcher {
 	/**
 	 * method to replicate behaviour of map.setLayoutProperty when Threebox are affected
 	 *
-	 * @author salgum1114
 	 * @param {string} layerId
 	 * @param {string} name
 	 * @param {*} value
@@ -568,7 +559,6 @@ class Threebox extends EventDispatcher {
 	/**
 	 * Custom Layers doesn't work on minzoom and maxzoom attributes, and if the layer is including labels they don't hide either on minzoom
 	 *
-	 * @author salgum1114
 	 * @param {string} layer3d
 	 * @param {number} minZoomLayer
 	 * @param {number} maxZoomLayer
@@ -583,7 +573,6 @@ class Threebox extends EventDispatcher {
 	/**
 	 * method to set the height of all the objects in a level. this only works if the objects have a geojson feature
 	 *
-	 * @author salgum1114
 	 * @param {string} layerId
 	 * @param {number} level
 	 * @returns
@@ -616,7 +605,6 @@ class Threebox extends EventDispatcher {
 	/**
 	 * method to toggle Layer visibility
 	 *
-	 * @author salgum1114
 	 * @param {string} layerId
 	 * @param {boolean} visible
 	 */
@@ -630,7 +618,6 @@ class Threebox extends EventDispatcher {
 	 * method set the CSS2DObjects zoom range and hide them at the same time the layer is
 	 *
 	 * @deprecated
-	 * @author salgum1114
 	 * @param {number} minZoom
 	 * @param {number} maxZoom
 	 */
@@ -642,7 +629,6 @@ class Threebox extends EventDispatcher {
 	/**
 	 * Update scene
 	 *
-	 * @author salgum1114
 	 */
 	public update() {
 		if (this.map.repaint) {
@@ -689,7 +675,6 @@ class Threebox extends EventDispatcher {
 	/**
 	 * method to fully dispose the resources, watch out is you call this without navigating to other page
 	 *
-	 * @author salgum1114
 	 * @returns
 	 */
 	public dispose() {

@@ -1,3 +1,8 @@
+/**
+ * @author salgum1114 / https://github.com/salgum1114
+ * @author bitTorin / https://github.com/bitTorin
+ */
+
 import mapboxgl from 'mapbox-gl';
 
 import Constant from './Constant';
@@ -67,7 +72,6 @@ class CameraSync {
 	/**
 	 * Set up the camera
 	 *
-	 * @author salgum1114
 	 */
 	setupCamera() {
 		const map = this.map as any;
@@ -157,7 +161,6 @@ class CameraSync {
 	/**
 	 * Calculate Camera Matrix
 	 *
-	 * @author salgum1114
 	 * @param {number} [pitch]
 	 * @param {number} [angle]
 	 * @param {Matrix4} [translateZ]
