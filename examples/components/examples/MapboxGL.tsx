@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import * as mapboxgl from 'mapbox-gl';
-import { ThreeLayer } from 'mapbox-gl-threelayer';
+import { ThreeLayer } from 'threelayer';
 
 const MapboxGL = () => {
 	const mapRef = useRef<mapboxgl.Map>();

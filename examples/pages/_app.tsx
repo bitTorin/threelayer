@@ -41,22 +41,22 @@ class MyApp extends App<{
 				<Head>
 					<title>{title}</title>
 					<meta name="description" content={description} />
-					<meta name="keywords" content="salgum1114,mapbox-gl,threejs,custom-layer,reactjs" />
+					<meta name="keywords" content="bitTorin,mapbox-gl,threejs,custom-layer,reactjs" />
 					<meta name="google-site-verification" content="YCCU8qpDKf7ka8WDDPA6rt1y0m9egFSi7zeHgmayb6Y" />
 					<meta property="og:title" content={title} />
 					<meta property="og:description" content={description} />
 					<meta property="og:type" content="website" />
-					<meta property="og:site_name" content="mapbox-gl-threelayer" />
+					<meta property="og:site_name" content="threelayer" />
 					<meta property="og:locale" content="ko_KR" />
-					<meta property="og:url" content={`https://salgum1114.github.io/mapbox-gl-threelayer${path}`} />
+					<meta property="og:url" content={`https://bitTorin.github.io/threelayer${path}`} />
 					<meta
 						property="og:image"
-						content="https://salgum1114.github.io/mapbox-gl-threelayer/salgum1114.png"
+						content="https://bitTorin.github.io/threelayer/bitTorin.png"
 					/>
 					<meta name="twitter:title" content={title} />
 					<meta
 						name="twitter:image"
-						content="https://salgum1114.github.io/mapbox-gl-threelayer/salgum1114.png"
+						content="https://bitTorin.github.io/threelayer/bitTorin.png"
 					/>
 					<link rel="manifest" href={`${process.env.prefix}/manifest.json`} />
 					<link rel="shortcut icon" href={`${process.env.prefix}/favicon.ico`} />

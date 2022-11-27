@@ -1,6 +1,6 @@
 {
-	"short_name": "mapbox-gl-threelayer",
-	"name": "mapbox-gl-threelayer",
+	"short_name": "threelayer",
+	"name": "threelayer",
 	"icons": [
 		{
 			"src": "favicon.ico",

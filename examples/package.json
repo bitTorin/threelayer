@@ -1,7 +1,7 @@
 {
-	"name": "mapbox-gl-threelayer-examples",
-	"version": "0.0.1",
-	"description": "Mapbox-GL ThreeLayer examples",
+	"name": "threelayer-examples",
+	"version": "0.0.2",
+	"description": "ThreeLayer examples",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -14,9 +14,9 @@
 		"ghpages": "npm run export && node scripts/ghpages"
 	},
 	"keywords": [
-		"mapbox-gl-threelayer"
+		"threelayer"
 	],
-	"author": "salgum1114",
+	"author": "bitTorin",
 	"license": "MIT",
 	"dependencies": {
 		"@ant-design/icons": "^4.2.1",

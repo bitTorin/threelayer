@@ -7,8 +7,8 @@ export interface SeoProps {
 
 const Seo: React.FC<NextSeoProps & SeoProps> = props => {
 	const {
-		title = 'mapbox-gl-threelayer',
-		description = 'Plugin to help you use Three.js on Mapbox-GL',
+		title = 'threelayer',
+		description = 'Plugin to help you use Threebox on Mapbox-GL within a React App',
 		path = '',
 		...other
 	} = props;
@@ -16,7 +16,7 @@ const Seo: React.FC<NextSeoProps & SeoProps> = props => {
 		<NextSeo
 			title={title}
 			description={description}
-			openGraph={{ url: `https://salgum1114.github.io/mapbox-gl-threelayer${path}`, title, description }}
+			openGraph={{ url: `https://bitTorin.github.io/threelayer${path}`, title, description }}
 			{...other}
 		/>
 	);

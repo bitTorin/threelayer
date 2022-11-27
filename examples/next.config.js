@@ -11,7 +11,7 @@ module.exports = withMDX({
 	},
 	pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
 	env: {
-		prefix: process.env.NODE_ENV === 'production' ? '/mapbox-gl-threelayer' : '',
+		prefix: process.env.NODE_ENV === 'production' ? '/threelayer' : '',
 	},
-	assetPrefix: process.env.NODE_ENV === 'production' ? '/mapbox-gl-threelayer' : '',
+	assetPrefix: process.env.NODE_ENV === 'production' ? '/threelayer' : '',
 });

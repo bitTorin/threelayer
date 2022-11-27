@@ -21,7 +21,7 @@ const StyledSpace = styled(Space)`
 const Header = () => {
 	const themes = useContext(ThemeContext);
 	const handleGoGithub = () => {
-		globalThis.open('https://github.com/salgum1114/mapbox-gl-threelayer', '_blank');
+		globalThis.open('https://github.com/bitTorin/threelayer', '_blank');
 	};
 	return (
 		<StyledHeader themes={themes}>

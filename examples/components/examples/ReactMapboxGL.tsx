@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import MapboxGL from 'react-mapbox-gl';
 import * as mapboxgl from 'mapbox-gl';
-import { ThreeLayer } from 'mapbox-gl-threelayer';
+import { ThreeLayer } from 'threelayer';
 
 const Map = MapboxGL({
 	accessToken: 'pk.eyJ1IjoianNjYXN0cm8iLCJhIjoiY2s2YzB6Z25kMDVhejNrbXNpcmtjNGtpbiJ9.28ynPf1Y5Q8EyB_moOHylw',

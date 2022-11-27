@@ -3,11 +3,11 @@ const ghpages = require('gh-pages');
 ghpages.publish(
 	'out',
 	{
-		repo: 'https://github.com/salgum1114/mapbox-gl-threelayer.git',
-		message: 'published https://salgum1114.github.io/mapbox-gl-threelayer',
+		repo: 'https://github.com/bitTorin/threelayer.git',
+		message: 'published https://bitTorin.github.io/threelayer',
 		user: {
-			name: 'salgum1114',
-			email: 'salgum1112@gmail.com',
+			name: 'bitTorin',
+			email: 'bitTorin@proton.me',
 		},
 		dotfiles: true,
 	},
@@ -15,7 +15,7 @@ ghpages.publish(
 		if (err) {
 			console.error(err);
 		} else {
-			console.log('published https://salgum1114.github.io/mapbox-gl-threelayer');
+			console.log('published https://bitTorin.github.io/threelayer');
 		}
 	},
 );
